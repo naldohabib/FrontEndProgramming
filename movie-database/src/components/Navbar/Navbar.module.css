@@ -1,6 +1,5 @@
-/* Small Screen */
 .container {
-  background-color: #4361EE;
+  background-color: #4361ee;
   padding: 1rem;
   color: #fff;
 }
@@ -25,7 +24,11 @@
   margin-bottom: 1rem;
 }
 
-/* Medium Screen */
+.navbar__link {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .navbar {
     flex-direction: row;
@@ -44,12 +47,4 @@
   .navbar__item {
     margin: 0 1rem;
   }
-}
-
-/* Large Screen */
-@media (min-width: 992px) {
-  /* 
-   * Nothing TODO HERE.
-   * We haven't styling Navbar.
-   */
 }
