@@ -13,10 +13,6 @@ function Home() {
             <AddMovieForm movies={movies} setMovies={setMovies} />
         </>
     );
-
-    // return(
-    //     <Counter />
-    // );
 }
 
 export default Home;

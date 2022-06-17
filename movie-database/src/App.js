@@ -7,6 +7,7 @@ import PopularMovie from "./pages/movie/Popular";
 import TopRated from "./pages/movie/TopRated";
 import { ThemeProvider } from "styled-components";
 import theme from "./utils/constants/theme";
+import Detail from "./pages/movie/Detail";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/movie/popular" element={<PopularMovie />} />
             <Route path="/movie/now" element={<NowPlaying />} />
             <Route path="/movie/top" element={<TopRated />} />
+            <Route path="/movie/:id" element={<Detail />} />
           </Routes>
         </Layout>
       </ThemeProvider>
