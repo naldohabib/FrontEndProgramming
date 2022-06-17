@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from './store';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* Bungkus App dgn Browser Router */}
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    {/* Bungkus/Hubungkan App dengan Browser Router agar URL browser dapat dimanipulasi oleh React Router */}
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
